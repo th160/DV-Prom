@@ -18,7 +18,7 @@ scripts/
   prepare_ipromp_datasets.py # Raw iPro-MP data -> .data
   precompute_tokens.py # .data -> .pt token cache
 ```
-If you already have `Datasets_dfm` and `cache_tokens_dfm` ready (available at https://doi.org/10.5281/zenodo.22078303), you only need the main script for training; the other two scripts are used to regenerate the input cache from the raw data.
+If you already have `Datasets_dfm` and `cache_tokens_dfm` ready (available at https://doi.org/10.5281/zenodo.22083569), you only need the main script for training; the other two scripts are used to regenerate the input cache from the raw data.
 ```bash
 python model_dfm/prepare_ipromp_datasets.py --ipromp_root "./Benchmark Dataset" --out_root ./Datasets_dfm
 python model_dfm/precompute_tokens.py  --datasets_root ./Datasets_dfm --cache_root ./cache_tokens_dfm
