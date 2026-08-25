@@ -1,9 +1,10 @@
-# iPro-BERTs: A novel Dual-View BERT based model for prokaryotic promoter prediction.
-Leveraging the fine-grained local representations of DNABERT alongside the computational efficiency and superior performance of DNABERT-2, we propose iPro-BERTs, a Dual-View model architecture that integrates DNABERT 6-mer and DNABERT-2. 
+# DV-Prom
+
+Leveraging the fine-grained local representations of DNABERT alongside the computational efficiency and superior performance of DNABERT-2, we propose DV-Prom, a Dual-View model architecture that integrates DNABERT 6-mer and DNABERT-2. 
 
 ## Workflow 
 <img width="7383" height="3542" alt="iPro-BERTs" src="https://github.com/user-attachments/assets/e647f95e-5821-4cb0-b8d6-95ebbfd4fbaa" />
-(A) Overview of the proposed iPro-BERTs framework: (a) DNABERT, (b) DNABERT-2, (c) DNABERT feature processing, (d) DNABERT-2 feature processing, and (e) Dual-View DNABERTs feature fusion. (B) Framework of the cross-validation ensemble strategy.
+(A) Overview of the proposed DV-Prom framework: (a) DNABERT, (b) DNABERT-2, (c) DNABERT feature processing, (d) DNABERT-2 feature processing, and (e) Dual-View DNABERTs feature fusion. (B) Framework of the cross-validation ensemble strategy.
 
 ## Environment Installation
 
@@ -15,7 +16,7 @@ pip install -r requirements.txt
 ```text
 scripts/
   train.py # Main training script
-  prepare_ipromp_datasets.py # Raw iPro-MP data -> .data
+  prepare_ipromp_datasets.py # Raw data -> .data
   precompute_tokens.py # .data -> .pt token cache
 ```
 If you already have `Datasets_dfm` and `cache_tokens_dfm` ready (available at https://doi.org/10.5281/zenodo.22083569), you only need the main script for training; the other two scripts are used to regenerate the input cache from the raw data.
