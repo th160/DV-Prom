@@ -1,6 +1,6 @@
 # DV-Prom
 
-Leveraging the fine-grained local representations of DNABERT alongside the computational efficiency and superior performance of DNABERT-2, we propose DV-Prom, a Dual-View model architecture that integrates DNABERT 6-mer and DNABERT-2. 
+Leveraging the fine-grained local representations of DNABERT alongside the semantic-focused tokenization of DNABERT-2, we propose DV-Prom, a Dual-View model architecture that integrates DNABERT 6-mer and DNABERT-2. 
 
 ## Workflow 
 <img width="7383" height="3542" alt="iPro-BERTs" src="https://github.com/user-attachments/assets/e647f95e-5821-4cb0-b8d6-95ebbfd4fbaa" />
